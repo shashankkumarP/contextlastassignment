@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { InputProvider } from './context/Inputcontext';
+// import { DisplayProvider } from './context/Display';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <InputProvider>
+        
+           <App />
+        
+    </InputProvider>
+    
   </React.StrictMode>
 );
 
